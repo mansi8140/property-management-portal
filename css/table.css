@@ -1,0 +1,38 @@
+/*Asodariya, Krupa - 1001773036
+Patel, Mansi - 1001874295
+Mudaliyar, Yogeshwaran - 1001965647*/
+
+.mainTable{
+    width: 80%;
+  justify-content: center;
+  
+
+}
+
+
+
+.memberTables {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+  .memberTableName{
+    text-align: center;
+  }
+  .memberTables th, .memberTables td, .memberTables  th {
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    padding: 8px;
+  }
+  
+  .memberTables  tr:nth-child(even){background-color: rgb(157, 225, 254, 0.74);}
+  
+  .memberTables  tr:hover {background-color: rgba(6, 115, 174, 0.851); color: white;}
+  
+  .memberTables  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgba(6, 115, 174, 0.851);
+    color: white;
+  }

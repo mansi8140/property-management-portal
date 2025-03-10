@@ -1,0 +1,124 @@
+/*Asodariya, Krupa - 1001773036
+Patel, Mansi - 1001874295
+Mudaliyar, Yogeshwaran - 1001965647*/
+
+.mainBody {
+    margin-left: 300px;
+}
+
+.memberHeder {
+    /* position: fixed; */
+    /* height:10pt; */
+    display: flex;
+    justify-content: right;
+    overflow: auto;
+    background-color: #9de1febd;
+    /* position:fixed;    */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3px 3px;
+    width: 100%;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.memberHeder a {
+    /* float: left; */
+    color: #555569;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.memberHeder a:hover {
+    background-color: rgba(8, 148, 255, 0.738);
+    color: #f2f2f2;
+    border-radius: 3pt;
+}
+
+.memberHeder a.active {
+    background-color: rgb(8, 148, 255);
+    color: #f2f2f2;
+    border-radius: 3pt;
+}
+
+.memberHeder .icon {
+    display: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: rgba(157, 225, 254, 0.74);
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.mainContent {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 100rem;
+}
+
+.logOutSidbar {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .memberHeder {
+        display: none;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    .mainBody {
+        margin-left: 0;
+    }
+
+    .mainContent {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}

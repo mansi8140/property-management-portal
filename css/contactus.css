@@ -1,0 +1,101 @@
+/*Asodariya, Krupa - 1001773036
+Patel, Mansi - 1001874295
+Mudaliyar, Yogeshwaran - 1001965647*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+
+/*--  contact --*/
+h3 {
+    font-size: 45px;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 5px;
+    position: relative;
+}
+h3:after {
+    position: absolute;
+    content: '';
+    width: 10%;
+    height: 3px;
+    background: #333;
+    left: 45%;
+    bottom: -18%;
+}
+
+.mr-2:hover {
+  opacity: 1;
+}
+
+.container {
+    padding: 16px;
+}
+
+/* Form */
+.form{
+    width : 40%; 
+    justify-content: center;
+    background-color: rgba(157,225,254,0.74);
+    margin-bottom: 2rem;
+}
+  
+/* card */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* 5px rounded corners */
+}
+  
+.form-heading{
+    text-align: center;
+}
+  
+.form-btn{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.submitBtn{
+    /*border-radius: 3pt;*/
+     margin: 3pt;
+  border-radius: 8pt;
+}
+
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 600px) {
+    .form{
+      width: auto;
+    }
+    .form-btn{
+      display: block;
+    }
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
