@@ -20,6 +20,3 @@ A **real estate management system** designed to help families and businesses eff
 - **Backend:** Laravel (PHP)
 - **Database:** MySQL
 - **Blog System:** WordPress
-
-
-
