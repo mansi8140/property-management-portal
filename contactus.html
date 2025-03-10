@@ -1,0 +1,95 @@
+<!-- Asodariya, Krupa (1001773036)
+Patel, Mansi (1001874295)
+Mudaliyar, Yogeshwaran (1001965647) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MARGARITA</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/contactus.css">
+
+	<!-- Add font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bgBody " style=" background-image : url(bg.jpeg)">
+	<div class="pageContainer">
+		<div class="topnav-responsive">
+			<a class="icon" href="#">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div class="topnav">
+			<a href="index.html">Home</a>
+			<a href="aboutus.html">About US</a>
+			<a class="active"  href="contactus.html">Contact US</a>
+			<a href="blog.html">Blog</a>
+			<a href="signup.html">Sign Up/Log In</a>
+		</div>
+
+
+
+		<div class="main">
+
+			<div class="contact" style="display: flex; justify-content: center;">
+				<form action="/action_page.php" class="form card">
+					<div class="container">
+						<h1 class="form-heading">Contact Form</h1>
+						<hr>
+						<label for="fname"><i class="fa mr-2 fa-user"></i>Name</label>
+						<input type="text" id="name" name="firstname" placeholder="Your name..">
+
+						<label for="email"><i class="fa mr-2 fa-envelope-open"></i>Email</label>
+						<input type="text" id="email" name="emailid" placeholder="Your email..">
+
+						<label for="phone"><i class="fa mr-2 fa-phone"
+								style="color: black; background: rgba(157,225,254,0.1);"></i>Phone</label>
+						<input type="text" id="phone" name="phonenumber" placeholder="Your phone number..">
+
+						<label for="message"><i class="fa mr-2 fa-edit"></i>Message</label>
+						<textarea id="message" name="message" placeholder="Write something.."
+							style="height:200px"></textarea>
+
+						<div class="clearfix  form-btn">
+							<input type="submit" onclick="document.getElementById('id01').style.display='none'"
+								class="submitBtn">
+						</div>
+
+
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- footer -->
+		<div class="footer">
+			<div class="icon-bar">
+				<a href="#"><i class="fa fa-phone"></i></a>
+				<a href="#"><i class="fa fa-envelope"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+
+			</div>
+			<div>
+				<h6 class="text">© 2018 Personal View. All Rights Reserved | Design by <a href="#"> Krupa
+						Asodariya, Mansi Patel, Yogesh Mudaliyar</a> </h6>
+			</div>
+		</div>
+		<!-- //footer -->
+		<script>
+			const topBars = document.getElementsByClassName('topnav-responsive')[0]
+        const topnavLinks = document.getElementsByClassName('topnav')[0]
+        topBars.addEventListener('click', () =>{
+            topnavLinks.classList.toggle('activeLinks')
+        })
+    
+		</script>
+	</div>
+</body>
+
+</html>

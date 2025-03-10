@@ -1,0 +1,140 @@
+<!-- Asodariya, Krupa (1001773036)
+Patel, Mansi (1001874295)
+Mudaliyar, Yogeshwaran (1001965647) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MARGARITA</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="css/login.css">
+
+	<!-- Add font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bgBody " style=" background-image : url(bg.jpeg)">
+
+	<div class="pageContainer">
+		<div class="topnav-responsive">
+            <a class="icon" href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About US</a>
+            <a href="contactus.html">Contact US</a>
+            <a href="blog.html">Blog</a>
+            <a class="active" href="signup.html">Sign Up/Log In</a>
+        </div>
+
+
+		<div class="main">
+
+			<div class="signupform" style=" display: flex; justify-content: center; padding-bottom:70pt ;">
+				<form action="login.html" class="form card" onsubmit="return validate()">
+					<div class="container">
+						<h1 class="form-heading">Register</h1>
+						<!-- <p>Please fill in this form to create an account.</p> -->
+						<hr>
+
+						<label for="fname"><b>First name</b></label>
+						<input type="text" placeholder="Enter first name" name="fname" required>
+
+						<label for="lname"><b>Last name</b></label>
+						<input type="text" placeholder="Enter last name" name="lname" required>
+
+						<label for="email"><b>Email</b></label>
+						<input type="text" placeholder="Enter Email" name="email" required id="email">
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required id="password">
+
+						<label for="ancestor"><b>Ancestor</b></label>
+						<input type="text" placeholder="Enter ancestor" name="ancestor" required>
+
+						<label for="relation"><b>Relationship</b></label>
+						<input type="text" placeholder="Enter relationship to ancestor" name="relation" required>
+
+						<div class="clearfix  form-btn">
+							<button type="reset" 
+								class="cancelbtn">Cancel</button>
+							<button type="submit" class="signupbtn">Sign Up</button>
+						</div>
+						<p style="text-align: center;"><a href="login.html" style="color:dodgerblue">Already have
+								account?</a></p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- <script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script> -->
+
+		<!-- footer -->
+		<div class="footer">
+			<div class="icon-bar">
+				<a href="#"><i class="fa fa-phone"></i></a>
+				<a href="#"><i class="fa fa-envelope"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+
+			</div>
+			<div>
+				<h6 class="text">© 2018 Personal View. All Rights Reserved | Design by <a href="#"> Krupa
+						Asodariya, Mansi Patel, Yogesh Mudaliyar</a> </h6>
+			</div>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+
+
+
+<script>
+	const topBars = document.getElementsByClassName('topnav-responsive')[0]
+        const topnavLinks = document.getElementsByClassName('topnav')[0]
+        topBars.addEventListener('click', () =>{
+            topnavLinks.classList.toggle('activeLinks')
+        })
+    
+	function validateForm() {
+		const emailPattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+		const passwordPattern = /^(?=.*\d)(?=.*[A-Z])(?=.*[!#$%&@])(.{12,50})$/
+
+		const inputEmail = document.querySelector("#email");
+		const inputPassword = document.querySelector("#password");
+
+		if (!inputEmail.test(emailPattern.value) && !passwordPattern.test(inputPassword.value)) {
+			alert("Please provide a valid email <abc@xyz.com> and password");
+			return false;
+		}
+		if (!inputEmail.test(emailPattern.value)) {
+			alert("Please provide a valid email <abc@xyz.com>");
+			return false;
+		}
+		else if (!passwordPattern.test(inputPassword.value)) {
+			alert("Please provide a valid password");
+			return false;
+		}
+
+		return true;
+	}
+</script>
+
+</html>
