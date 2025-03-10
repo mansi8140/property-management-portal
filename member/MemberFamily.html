@@ -1,0 +1,79 @@
+<!-- Asodariya, Krupa (1001773036)
+Patel, Mansi (1001874295)
+Mudaliyar, Yogeshwaran (1001965647) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheet.css" >
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/sidebarPages.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="MemberDashboard.html">Dashboard</a>
+        <a class="active" href="MemberFamily.html">Family Member</a>
+        <a href="MemberGroup.html">Family Group</a> 
+        <a href="MemberLand.html">Land</a>
+        <a href="MemberProject.html">Projects</a>
+        <a href="MemberTrials.html">Trials</a>
+    </div>
+
+    <div class="mainBody">
+        <div class="memberHeder">
+
+            <a href="../index.html">Log out</a>
+            <!-- <a class="active" href="signup.html">Sign Up/Log In</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <div class="mainContent">
+            <div class="contact" style="display: flex;  justify-content: center;" id="projects">
+                <form action="/action_page.php" class="memberForm card">
+                    <div class="container">
+                        <h1 class="form-heading">Register your family Member</h1>
+                        <hr>
+                        <label for="family_id"><b>Family ID</b></label>
+                        <input type="text" placeholder="Enter Family ID number" name="family_id" required>
+              
+                        <label for="fname"><b>First name</b></label>
+                        <input type="text" placeholder="Enter first name" name="fname" required>
+              
+                        <label for="lname"><b>Last name</b></label>
+                        <input type="text" placeholder="Enter last name" name="lname" required>
+                        
+                        <label for="parent_id"><b>Parent ID</b></label>
+                        <input type="text" placeholder="Enter Parent's ID" name="parent_id" required>
+              
+                        <label for="relation"><b>Relationship</b></label>
+                        <input type="text" placeholder="Enter relationship to ancestor" name="relation" required>
+              
+                        <div class="clearfix  form-btn">
+                            <button type="submit" class="signupbtn">Register</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        </div>
+
+                        
+                        <!-- <label for="member_id"><b>Member ID</b></label>
+              <input type="text" placeholder="Enter member Id" name="member_id" required> -->
+
+                    
+
+                        
+                    </div>
+                </form>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

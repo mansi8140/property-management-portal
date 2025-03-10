@@ -1,0 +1,77 @@
+<!-- Asodariya, Krupa (1001773036)
+Patel, Mansi (1001874295)
+Mudaliyar, Yogeshwaran (1001965647) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylesheet.css" >
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/sidebarPages.css">
+   
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="MemberDashboard.html">Dashboard</a>
+        <a href="MemberFamily.html">Family Member</a>
+        <a class="active" href="MemberGroup.html">Family Group</a> 
+        <a href="MemberLand.html">Land</a>
+        <a href="MemberProject.html">Projects</a>
+        <a href="MemberTrials.html">Trials</a>
+    </div>
+
+    <div class="mainBody">
+        <div class="memberHeder">
+
+            <a href="../index.html">Log out</a>
+            <!-- <a class="active" href="signup.html">Sign Up/Log In</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+
+        <div class="mainContent">
+            <div class="contact" style="display: flex;  justify-content: center;" id="projects">
+                <form action="/action_page.php" class="memberForm card">
+                    <div class="container">
+                        <h1 class="form-heading">Register your family</h1>
+                        <hr>
+
+
+                        <label for="family_group_id"><b>Family group ID</b></label>
+                        <input type="text" placeholder="Enter Family group ID number" name="family_group_id" required>
+
+                        <label for="family_name"><b>Family name</b></label>
+                        <input type="text" placeholder="Enter Family name" name="family_name" required>
+
+                        <label for="land_id"><b>Land ID</b></label>
+                        <input type="text" placeholder="Enter land ID" name="land_id" required>
+
+                        <label for="project_name"><b>Project name</b></label>
+                        <input type="text" placeholder="Enter project name" name="project_name" required>
+
+                        <label for="no_member"><b>Number of family member</b></label>
+                        <input type="text" placeholder="Enter number of family member" name="no_member" required>
+
+
+                        <div class="clearfix  form-btn">
+
+                            <button type="submit" class="signupbtn">Register</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
